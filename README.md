@@ -44,8 +44,6 @@ This is a simple C program that helps students determine their eligibility for v
 
 Enter the course after 12th (1 for Engineering, 2 for BSc, 3 for BCom): 1 Enter percentile of CET: 95 Your approximate rank based on a CET percentile of 95.00 is: 10000 You can do Engineering Select branch for B.Tech based on marks: Enter 'c' for Software Engineering, 'm' for Mechanical Engineering, 'e' for Electronics Engineering: c Eligible for Software Engineering
 
-vbnet
-Copy code
 
 ## Relevant Links
 
@@ -53,8 +51,4 @@ For more information on CET and the courses offered, visit the official [CetCell
 
 ## Contributing
 
-If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. 
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+If you'd like to contribute to this project, feel free to fork the repository and submit a pull request.
