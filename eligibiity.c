@@ -66,27 +66,6 @@ int main() {
             } else {
                 printf("Marks not sufficient for Engineering.\n");
             }
-            printf("grades are:\n");
-            if(board_marks>90)
-            {
-            printf("A");
-            }
-            else if(board_marks>70)
-            {
-            printf("B");
-            }
-             else if(board_marks>60)
-            {
-            printf("C");
-            }
-             else if(board_marks>36)
-            {
-            printf("D");
-            }
-            else 
-            {
-               printf("fail"); 
-            }
             break;
 
         case 2:  // BSc
@@ -108,27 +87,6 @@ int main() {
                 }
             } else {
                 printf("Marks not sufficient for BSc.\n");
-            }
-            printf("grades are:");
-            if(board_marks>90)
-            {
-            printf("A");
-            }
-            else if(board_marks>70)
-            {
-            printf("B");
-            }
-             else if(board_marks>60)
-            {
-            printf("C");
-            }
-             else if(board_marks>36)
-            {
-            printf("D");
-            }
-            else 
-            {
-               printf("fail"); 
             }
             break;
 
