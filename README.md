@@ -36,9 +36,9 @@ This is a simple C program that helps students determine their eligibility for v
 
 ## Usage
 
-1. Clone this repository.
-2. Compile the C code using a C compiler.
-3. Run the executable and follow the prompts to input your course and marks.
+1. Personal use for students
+2. counselling
+3. To check eligibility
 
 ## Example
 
