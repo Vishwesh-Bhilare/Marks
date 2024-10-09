@@ -4,10 +4,13 @@ int main() {
     int course, marks, total_students = 200000;
     char branch;
     float percentile, approximate_rank;
+    int board_marks;
 
     printf("Enter the course after 12th (1 for Engineering, 2 for BSc, 3 for BCom): ");
     scanf("%d", &course);
 
+    printf("Enter marks of boards:");
+    scanf("%d",&board_marks);
     printf("Enter percentile of CET: ");
     scanf("%d", &marks);
 
@@ -19,12 +22,34 @@ int main() {
 
     // Display the approximate rank
     printf("Your approximate rank based on a CET percentile of %.2f is: %.0f\n", percentile, approximate_rank);
+    
+    printf("Grades are: ");
+            if(board_marks>90)
+            {
+            printf("A\n");
+            }
+            else if(board_marks>70)
+            {
+            printf("B\n");
+            }
+             else if(board_marks>60)
+            {
+            printf("C\n");
+            }
+             else if(board_marks>36)
+            {
+            printf("D\n");
+            }
+            else 
+            {
+               printf("fail\n"); 
+            }
 
     switch (course) {
         case 1:  // Engineering
             if (marks > 90) {
                 printf("You can do Engineering\n");
-                printf("Select branch for B.Tech based on marks:\n");
+                printf("\nSelect branch for B.Tech based on marks:\n");
                 printf("Enter 'c' for Software Engineering, 'm' for Mechanical Engineering, 'e' for Electronics Engineering: ");
                 getchar();
                 scanf("%c", &branch);
@@ -41,12 +66,33 @@ int main() {
             } else {
                 printf("Marks not sufficient for Engineering.\n");
             }
+            printf("grades are:\n");
+            if(board_marks>90)
+            {
+            printf("A");
+            }
+            else if(board_marks>70)
+            {
+            printf("B");
+            }
+             else if(board_marks>60)
+            {
+            printf("C");
+            }
+             else if(board_marks>36)
+            {
+            printf("D");
+            }
+            else 
+            {
+               printf("fail"); 
+            }
             break;
 
         case 2:  // BSc
-            if (marks > 60) {
+            if (board_marks > 60) {
                 printf("You can do BSc\n");
-                printf("Select branch for BSc based on marks:\n");
+                printf("\nSelect branch for BSc based on marks:\n");
                 printf("Enter 'c' for BCS, 'm' for BSc Maths, 'e' for BSc in Electronics: ");
                 getchar();
                 scanf("%c", &branch);
@@ -63,12 +109,33 @@ int main() {
             } else {
                 printf("Marks not sufficient for BSc.\n");
             }
+            printf("grades are:");
+            if(board_marks>90)
+            {
+            printf("A");
+            }
+            else if(board_marks>70)
+            {
+            printf("B");
+            }
+             else if(board_marks>60)
+            {
+            printf("C");
+            }
+             else if(board_marks>36)
+            {
+            printf("D");
+            }
+            else 
+            {
+               printf("fail"); 
+            }
             break;
 
         case 3:  // BCom
-            if (marks > 50) {
+            if (board_marks > 50) {
                 printf("You can do BCom\n");
-                printf("Select branch for BCom based on marks:\n");
+                printf("\nSelect branch for BCom based on marks:\n");
                 printf("Enter 'b' for Business Laws, 'm' for Marketing, 'i' for BSc in Income Tax: ");
                 getchar(); 
                 scanf("%c", &branch);
@@ -78,6 +145,7 @@ int main() {
                 } else if (branch == 'm' && marks >= 45) {
                     printf("Eligible for BSc Marketing\n");
                 } else if (branch == 'i' && marks >= 45) {
+                    
                     printf("Eligible for BSc Income Tax\n");
                 } else {
                     printf("Ineligible for selected BCom branch\n");
@@ -85,6 +153,7 @@ int main() {
             } else {
                 printf("Marks not sufficient for BCom.\n");
             }
+            
             break;
 
         default:
